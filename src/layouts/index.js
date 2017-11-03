@@ -4,7 +4,9 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
 import Header from './header'
+import Footer from './footer'
 
+import '../styles/ionicons.css'
 import '../styles/lib.css'
 import '../styles/nav.css'
 import '../styles/index.css'
@@ -19,7 +21,10 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
-    {children()}
+    <main>
+      {children()}
+    </main>
+    <Footer />
   </div>
 )
 

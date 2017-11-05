@@ -1,15 +1,49 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Slider from 'react-slick'
 
 import banner from '../img/banner.png'
 import screens from '../img/screens.png'
 import browser from '../img/browser.png'
 import can_i_help from '../img/can_i_help.png'
 
+import slide1 from '../img/slider/1.png'
+import slide2 from '../img/slider/2.png'
+import slide3 from '../img/slider/3.png'
+import slide4 from '../img/slider/4.png'
+import slide5 from '../img/slider/5.png'
+import {ArrowNext, ArrowPrev} from '../components'
+
+const settings = {
+  autoplay: true,
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: true,
+  draggable: true,
+  centerMode: true,
+  swipe: true,
+  touchMove: true,
+  swipeToSlide: true,
+  nextArrow: <ArrowNext />,
+  prevArrow: <ArrowPrev />
+}
+
 const IndexPage = () => (
   <article>
     <section className="position-relative z-1">
-      <div className="banner" style={{backgroundImage: `url(${banner})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', height: 464, backgroundPosition: `50% 0`}}>
+      <div
+        className="banner"
+        style={{
+          backgroundImage: `url(${banner})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          height: 390,
+          backgroundPosition: `50% 0`, marginTop: -10
+        }}>
+
         <h1>Tvořím webové stránky, specializuji se na weby menšího a středního rozsahu, jejich logickou strukturu, přehled v informacích webu, originální grafiku, kvalitní a validní kód. Weby tvořím zcela na míru.</h1>
         <h2>Potřebujete nový web?</h2>
         <a href="/kontakt" className="btn btn-default" type="submit">Kontaktujte mě</a>
@@ -62,7 +96,25 @@ const IndexPage = () => (
     </section>
 
     <section id="full-width-slider">
-      {/* slideshow here */}
+      <h2>Ukázky z portfolia</h2>
+
+      <Slider {...settings}>
+        <div className="slide">
+          <img src={slide1} alt="" />
+        </div>
+        <div className="slide">
+          <img src={slide2} alt="" />
+        </div>
+        <div className="slide">
+          <img src={slide3} alt="" />
+        </div>
+        <div className="slide">
+          <img src={slide4} alt="" />
+        </div>
+        <div className="slide">
+          <img src={slide5} alt="" />
+        </div>
+      </Slider>
     </section>
 
     <section className="container-fluid part-of-your-project" style={{backgroundImage: `url(${can_i_help})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', height: 300, backgroundPosition: `50% 0`}}>

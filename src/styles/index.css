@@ -136,6 +136,50 @@ box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
   margin: 5px 0;
 }
 
+
+
+
+
+
+/*
+*** MAIN PAGE SLIDER
+*/
+
+#full-width-slider {
+  margin-bottom: 50px;
+  overflow: hidden;
+  background: #f8f8f8;
+  padding: 1em 0 3em 0;
+}
+
+#full-width-slider h2 {
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+#full-width-slider img {
+  pointer-events: none;
+}
+
+.slick-prev {
+  left: 5% !important;
+  z-index: 10;
+}
+
+.slick-next {
+  right: 5% !important;
+  z-index: 10;
+}
+
+
+
+
+
+
+
+
 /*.browser {
   float: left;
   margin-top: 2em;
@@ -166,6 +210,16 @@ box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
   font-weight: 300;
   font-size: 18px;
 }
+
+.part-of-your-project a {
+  text-decoration: underline;
+}
+
+
+
+
+
+
 
 footer {
   padding: 1em 0;

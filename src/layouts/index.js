@@ -6,6 +6,8 @@ import Helmet from 'react-helmet'
 import Header from './header'
 import Footer from './footer'
 
+// import '../styles/slick/slick.min.css'
+// import '../styles/slick/slick-theme.min.css'
 import '../styles/ionicons.css'
 import '../styles/lib.css'
 import '../styles/nav.css'
@@ -19,7 +21,10 @@ const TemplateWrapper = ({ children }) => (
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
-    />
+    >
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    </Helmet>
     <Header />
     <main>
       {children()}

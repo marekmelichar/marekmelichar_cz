@@ -10,8 +10,8 @@ import Portfolio6 from '../img/portfolio/6.jpg'
 
 const PortfolioPage = () => (
   <section className="portfolio">
-    <div class="row">
-			<div class="column size_100">
+    <div className="row">
+			<div className="column size_100">
 				<h3>PORTFOLIO</h3>
 			</div>
 		</div>

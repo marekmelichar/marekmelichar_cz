@@ -41,7 +41,7 @@ const IndexPage = () => (
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           height: 390,
-          backgroundPosition: `50% 0`, marginTop: -10
+          backgroundPosition: `50% 0`
         }}>
 
         <h1>Tvořím webové stránky, specializuji se na weby menšího a středního rozsahu, jejich logickou strukturu, přehled v informacích webu, originální grafiku, kvalitní a validní kód. Weby tvořím zcela na míru.</h1>

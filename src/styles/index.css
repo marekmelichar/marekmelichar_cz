@@ -63,6 +63,7 @@ header h2 {
 
 .banner {
   text-align: center;
+  margin-top: -10px;
 }
 
 .banner h1 {
@@ -164,14 +165,23 @@ box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
   pointer-events: none;
 }
 
-.slick-prev {
-  left: 5% !important;
+.slick-prev,
+.slideshow-prev {
+  left: 0 !important;
   z-index: 10;
 }
 
-.slick-next {
-  right: 5% !important;
+.slick-next,
+.slideshow-next {
+  right: 0 !important;
   z-index: 10;
+}
+
+.slideshow-next,
+.slideshow-prev {
+  background: rgba(255,255,255,0.5);
+  padding: 0.25em;
+  border-radius: 0;
 }
 
 
@@ -267,12 +277,16 @@ footer .social {
 
 /* GALLERY */
 
-.portfolio h3 {
+#portfolio h1 {
   font-family: 'open_sansbold', sans-serif;
   font-size: 1.5em;
   margin-top: 2em;
   text-align: center;
   font-weight: bold;
+}
+
+#portfolio img {
+  pointer-events: none;
 }
 
 .image-grid {
@@ -328,8 +342,10 @@ footer .social {
   margin: 1em 0;
 }
 
-.screen-reader-response {
-  display: none;
+#kontakt .map {
+  height: 350px;
+  margin-top: 3em;
+  padding: 2em;
 }
 
 
@@ -418,55 +434,83 @@ footer .social {
 
 @media (max-width: 767px){
 
-h2 {
-  font-size: 1.15em;
-}
+  .name-wrap {
+    float: right;
+    position: absolute;
+    left: 25%;
+    top: 7%;
+  }
 
-.banner h1 {
-  padding: 50px 10px 0 10px;
-  font-size: 1.15em;
-}
+  .logo-wrap {
+    float: left;
+  }
 
-.banner h2 {
-  padding: 50px 0 0 0;
-  font-size: 1em;
-}
+  .logo-wrap img {
+    width: 60%;
+  }
 
-.banner button {
-  margin: 0;
-  font-size: 0.75em;
-}
+  .menu-trigger {
+    float: right;
+  }
 
-.browser {
-  float: none;
-  margin: 0 auto 40px auto;
-}
+  h2 {
+    font-size: 1.15em;
+  }
 
-.offer-javascript-services .text-right {
-  text-align: left;
-}
+  .banner {
+    margin-top: -35px;
+  }
 
-.screens {
-  height: 170px;
-  background-size: 50%;
-  background-position: 80% 100%;
-}
+  .banner h1 {
+    padding: 50px 10px 0 10px;
+    font-size: 1.15em;
+  }
 
-.browser {
-  width: 100%;
-  height: 110px;
-  background-size: 50%;
-  background-position: 50% 50%;
-}
+  .banner h2 {
+    padding: 50px 0 0 0;
+    font-size: 1em;
+  }
 
-.customize-support header.fixed {
-    top: 0;
-}
+  .banner button {
+    margin: 0;
+    font-size: 0.75em;
+  }
 
-.image-grid .gallery-img {
-	float: left;
-	width: 99%;
-	margin: 0.5%;
-}
+  .browser {
+    float: none;
+    margin: 0 auto 40px auto;
+  }
+
+  .offer-javascript-services .text-right {
+    text-align: left;
+  }
+
+  .screens {
+    margin-top: 3em;
+    margin-bottom: -2em;
+    background-size: 50%;
+    background-position: 80% 100%;
+  }
+
+  .browser {
+    width: 100%;
+    background-size: 50%;
+    background-position: 50% 50%;
+  }
+
+  .customize-support header.fixed {
+      top: 0;
+  }
+
+  .image-grid .gallery-img {
+    float: left;
+    width: 99%;
+    margin: 0.5%;
+  }
+
+  #kontakt .map {
+    padding: 2em 0 4em 0;
+    height: 390px;
+  }
 
 }

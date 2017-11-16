@@ -11,14 +11,12 @@ const ContactPage = () => (
       </div>
     </div>
     <div
-      className="margin-top-3"
+      className="map"
       style={{
         backgroundImage: `url(${map})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        height: 350,
         backgroundPosition: `50% 0`,
-        padding: `2em`,
         position: 'relative'
       }}>
       <div className="row">

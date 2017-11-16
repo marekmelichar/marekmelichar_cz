@@ -9,10 +9,10 @@ import Portfolio5 from '../img/portfolio/5.jpg'
 import Portfolio6 from '../img/portfolio/6.jpg'
 
 const PortfolioPage = () => (
-  <section className="portfolio">
+  <section id="portfolio">
     <div className="row">
 			<div className="column size_100">
-				<h3>PORTFOLIO</h3>
+				<h1>PORTFOLIO</h1>
 			</div>
 		</div>
     <div className="image-grid group">

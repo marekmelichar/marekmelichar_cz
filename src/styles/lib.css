@@ -294,6 +294,14 @@ a.logo {
   padding-top: 2em;
 }
 
+.padding_top_3 {
+  padding-top: 3em;
+}
+
+.padding_left_3 {
+  padding-left: 3em;
+}
+
 .float-left {
   float: left;
 }

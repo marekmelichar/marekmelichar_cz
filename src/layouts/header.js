@@ -9,7 +9,12 @@ export default class Header extends Component {
   }
 
   state = {
-    showMobileMenu: false
+    showMobileMenu: false,
+    currentPage: 0
+  }
+
+  currentPageHandler = index => {
+    this.setState({ currentPage: index })
   }
 
   render() {
@@ -26,17 +31,17 @@ export default class Header extends Component {
       		<div className="column size_33 main-menu">
             <nav id="menu-main-menu">
               <ul className="primary-menu-list">
-                <li className="menu-item current_page_item"><Link to="/">DOMŮ</Link></li>
-                <li className="menu-item"><Link to="/portfolio">PORTFOLIO</Link></li>
-                <li className="menu-item"><Link to="/kontakt">KONTAKT</Link></li>
+                <li className={`menu-item ${this.state.currentPage === 0 ? 'current_page_item' : null}`} onClick={() => this.currentPageHandler(0)}><Link to="/">DOMŮ</Link></li>
+                <li className={`menu-item ${this.state.currentPage === 1 ? 'current_page_item' : null}`} onClick={() => this.currentPageHandler(1)}><Link to="/portfolio">PORTFOLIO</Link></li>
+                <li className={`menu-item ${this.state.currentPage === 2 ? 'current_page_item' : null}`} onClick={() => this.currentPageHandler(2)}><Link to="/kontakt">KONTAKT</Link></li>
               </ul>
             </nav>
 
             <nav id="slide-menu" className="display-none" rel="nofollow">
               <ul className="primary-menu-list">
-                <li className="menu-item current_page_item"><Link to="/">DOMŮ</Link></li>
-                <li className="menu-item"><Link to="/portfolio">PORTFOLIO</Link></li>
-                <li className="menu-item"><Link to="/kontakt">KONTAKT</Link></li>
+                <li className={`menu-item ${this.state.currentPage === 0 ? 'current_page_item' : null}`} onClick={() => this.currentPageHandler(0)}><Link to="/">DOMŮ</Link></li>
+                <li className={`menu-item ${this.state.currentPage === 1 ? 'current_page_item' : null}`} onClick={() => this.currentPageHandler(1)}><Link to="/portfolio">PORTFOLIO</Link></li>
+                <li className={`menu-item ${this.state.currentPage === 2 ? 'current_page_item' : null}`} onClick={() => this.currentPageHandler(2)}><Link to="/kontakt">KONTAKT</Link></li>
               </ul>
             </nav>
 

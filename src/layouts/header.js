@@ -18,6 +18,11 @@ export default class Header extends Component {
     this.setState({ currentPage: window.location.pathname.replace(/\//g , '') })
   }
 
+  componentWillReceiveProps(nextProps) {
+    // on navigation between pages, e.g. click on image link going to portfolio page, change current link in menu
+    this.setState({ currentPage: window.location.pathname.replace(/\//g , '') })
+  }
+
   currentPageHandler = id => {
     this.setState({ currentPage: id })
   }
@@ -35,11 +40,11 @@ export default class Header extends Component {
       	<div className="row">
       		<Link to="/" className="column size_33 name-wrap">
       			<h1>MAREK MELICHAR</h1>
-      			<h2>TVORBA WEBOVÝCH STRÁNEK</h2>
+      			<h2>WEBDESIGNER</h2>
       		</Link>
-      		<div className="column size_33 logo-wrap text-center">
+      		<Link to="/" className="column size_33 logo-wrap text-center">
       			<img src={logo} className="logo" alt="Logo" />
-      		</div>
+      		</Link>
       		<div className="column size_33 main-menu">
             <nav id="menu-main-menu">
               <ul className="primary-menu-list">

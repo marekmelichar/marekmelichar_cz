@@ -28,7 +28,16 @@ const settings = {
   touchMove: true,
   swipeToSlide: true,
   nextArrow: <ArrowNext />,
-  prevArrow: <ArrowPrev />
+  prevArrow: <ArrowPrev />,
+  responsive: [
+    { 
+      breakpoint: 767, 
+      settings: { slidesToShow: 2 } 
+    }, {
+      breakpoint: 321,
+      settings: { slidesToShow: 1 }
+    }
+  ]
 }
 
 const IndexPage = () => (
@@ -99,21 +108,21 @@ const IndexPage = () => (
       <h2>Ukázky z portfolia</h2>
 
       <Slider {...settings}>
-        <div className="slide">
-          <img src={slide1} alt="" />
-        </div>
-        <div className="slide">
-          <img src={slide2} alt="" />
-        </div>
-        <div className="slide">
-          <img src={slide3} alt="" />
-        </div>
-        <div className="slide">
-          <img src={slide4} alt="" />
-        </div>
-        <div className="slide">
-          <img src={slide5} alt="" />
-        </div>
+        <Link to="/portfolio" className="slide">
+          <img src={slide1} alt="epoznamky.cz" />
+        </Link>
+        <Link to="/portfolio" className="slide">
+          <img src={slide2} alt="kovářství Uhříček" />
+        </Link>
+        <Link to="/portfolio" className="slide">
+          <img src={slide3} alt="Bottleservice" />
+        </Link>
+        <Link to="/portfolio" className="slide">
+          <img src={slide4} alt="Výškové práce" />
+        </Link>
+        <Link to="/portfolio" className="slide">
+          <img src={slide5} alt="LMŠ Permoník" />
+        </Link>
       </Slider>
     </section>
 

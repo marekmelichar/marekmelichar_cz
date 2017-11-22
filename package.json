@@ -9,10 +9,16 @@
     "gatsby-plugin-favicon": "^1.0.0",
     "gatsby-plugin-google-analytics": "^1.0.12",
     "gatsby-plugin-react-helmet": "^1.0.8",
-    "react-slick": "^0.15.4"
+    "react-slick": "^0.15.4",
+    "typeface-open-sans": "0.0.45"
   },
   "keywords": [
-    "gatsby"
+    "Marek",
+    "Melichar",
+    "Personal",
+    "Website",
+    "Webdesigner",
+    "Brno"
   ],
   "license": "MIT",
   "main": "n/a",

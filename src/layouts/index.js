@@ -10,10 +10,13 @@ import logo from '../img/logo.png'
 
 // import '../styles/slick/slick.min.css'
 // import '../styles/slick/slick-theme.min.css'
-import '../styles/ionicons.css'
+// import '../styles/ionicons.css'
+
+// import 'typeface-open-sans'
 import '../styles/lib.css'
 import '../styles/nav.css'
 import '../styles/index.css'
+// import '../styles/ionicons.css'
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -50,13 +53,17 @@ const TemplateWrapper = ({ children }) => (
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
       <link rel="manifest" href="/manifest.json" />
-      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#3d3d3d" />
 
       <link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+      <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+      <link rel='dns-prefetch' href='//code.ionicframework.com' />
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i" />
+      <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
 
-      
+
     </Helmet>
     <Header />
     <main>

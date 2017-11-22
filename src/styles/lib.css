@@ -1,7 +1,7 @@
 /*
 *** OWN LIBRARY BEGIN
 */
-
+/*
 @font-face {
     font-family: 'open_sanslight';
     src: url('../fonts/open_sans/opensans-light-webfont.eot');
@@ -72,7 +72,7 @@
     font-weight: bold;
     font-style: italic;
 
-}
+}*/
 
 
 
@@ -86,7 +86,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 body {
   -webkit-tap-highlight-color: transparent;
-  font-family: 'robotoregular', sans-serif;
+  /*font-family: arial, sans-serif;*/
   font-weight: normal;
   font-style: normal;
   font-size: 0.9em;

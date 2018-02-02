@@ -17,10 +17,10 @@ export default class Header extends Component {
     		<div className="row">
     			<div className="column size_100 text-center social">
             {/* dont use Link because it is not inside the app */}
-    				<a href="https://twitter.com/marek_melichar"><i className="icon ion-social-twitter-outline"></i></a>
-    				<a href="https://www.facebook.com/marek.melichar"><i className="icon ion-social-facebook-outline"></i></a>
-    				<a href="https://www.linkedin.com/in/melicharmarek/"><i className="icon ion-social-linkedin-outline"></i></a>
-    				<a href="https://github.com/marekmelichar"><i className="icon ion-social-github-outline"></i></a>
+    				<a href="https://twitter.com/marek_melichar" target="_blank"><i className="icon ion-social-twitter-outline"></i></a>
+    				<a href="https://www.facebook.com/marek.melichar" target="_blank"><i className="icon ion-social-facebook-outline"></i></a>
+    				<a href="https://www.linkedin.com/in/melicharmarek/" target="_blank"><i className="icon ion-social-linkedin-outline"></i></a>
+    				<a href="https://github.com/marekmelichar" target="_blank"><i className="icon ion-social-github-outline"></i></a>
     			</div>
     		</div>
     	</footer>

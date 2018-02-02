@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import Link from 'gatsby-link'
 
 import logo from '../img/logo.png'
 
@@ -17,6 +16,7 @@ export default class Header extends Component {
       <footer className="container-fluid footer">
     		<div className="row">
     			<div className="column size_100 text-center social">
+            {/* dont use Link because it is not inside the app */}
     				<a href="https://twitter.com/marek_melichar"><i className="icon ion-social-twitter-outline"></i></a>
     				<a href="https://www.facebook.com/marek.melichar"><i className="icon ion-social-facebook-outline"></i></a>
     				<a href="https://www.linkedin.com/in/melicharmarek/"><i className="icon ion-social-linkedin-outline"></i></a>

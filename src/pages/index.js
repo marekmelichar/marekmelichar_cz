@@ -22,17 +22,17 @@ const settings = {
   slidesToShow: 3,
   slidesToScroll: 1,
   arrows: true,
-  draggable: true,
+  draggable: false,
   centerMode: true,
   swipe: true,
-  touchMove: true,
-  swipeToSlide: true,
+  touchMove: false,
+  swipeToSlide: false,
   nextArrow: <ArrowNext />,
   prevArrow: <ArrowPrev />,
   responsive: [
-    { 
-      breakpoint: 767, 
-      settings: { slidesToShow: 2 } 
+    {
+      breakpoint: 767,
+      settings: { slidesToShow: 2 }
     }, {
       breakpoint: 321,
       settings: { slidesToShow: 1 }
@@ -55,7 +55,8 @@ const IndexPage = () => (
 
         <h1>Tvořím webové stránky, specializuji se na weby menšího a středního rozsahu, jejich logickou strukturu, přehled v informacích webu, originální grafiku, kvalitní a validní kód. Weby tvořím zcela na míru.</h1>
         <h2>Potřebujete nový web?</h2>
-        <a href="/kontakt" className="btn btn-default" type="submit">Kontaktujte mě</a>
+        {/* <a href="/kontakt" className="btn btn-default" type="submit">Kontaktujte mě</a> */}
+        <Link to="/kontakt" className="btn btn-default">Kontaktujte mě</Link>
       </div>
     </section>
 
